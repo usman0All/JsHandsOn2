@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HandsOn2</title>
+</head>
+<body>
+    <p>1.Calculator</p>
+    <pre>
+        const Calculator = (A, B, C) => {
+        switch(A){
+        case '+':return B+C;
+        case '-':return B-C;
+        case '*':return B*C;
+        case '/':return B/C;
+       }
+      };
+    </pre>
+    <p>2.Check whether condition are full filled or not</p>
+    <pre>
+        const Check_divisibility = (N) => {
+            if(N%6===0&&N%9===0){
+              return 'Divisible by both'
+            }else{
+              return 'Not Divisible by both'
+            }
+        };
+    </pre>
+    <p>3Eligible Voter.</p>
+    <pre>
+        const isEligible = (a) => {
+            if(a>=18){
+              return 'Eligible for Voting'
+            }else {
+              return 'Not Eligible for Voting'
+              
+            }
+              
+          };
+    </pre>
+    <p>4.Find Relation</p>
+    <pre>
+        const findRelation = (x,y) => {
+            if(x<y){
+              return x+' is smaller than '+y;
+            }
+            else if(x>y){
+               return x+' is greater than '+y;
+              }
+              else{
+                 return x+' is equal to '+y;
+              }
+              
+          };
+        </pre>
+    <p>5.Find Grades</p> 
+    <pre>
+        const findGrades = (a) => {
+            switch(true){
+              case a<=10:return 'E';
+              case a>=11&&a<=20:return 'D';
+              case a>=21&&a<=30:return 'C';
+              case a>=31&&a<=40:return 'B';
+              case a>=41&&a<=50:return 'A';
+            }
+              
+          };
+     </pre>
+     <p>6.Get Value</p> 
+     <pre>
+        const getValue = (a) => {
+            if(a==='P'||a==='p'){
+              return 'PrepBytes';
+            }
+            if(a==='Z'||a==='z'){
+              return 'Zenith';
+            }
+            if(a==='E'||a==='e'){
+              return 'Expert Coder';
+            }
+            if(a==='D'||a==='d'){
+              return 'Data Structure';
+            }
+          };
+     </pre> 
+     <p>7.Find Maximum out of three</p>
+     <pre>
+        const Max_out_of_three = (A,B,C) => {
+            if(A>B&&A>C){
+              return A;
+            }
+            else if(B>A&&B>C){
+              return B;
+            }
+            else if(C>A&&C>B){
+              return C;
+            }else{
+              return '-1';
+            }
+              
+          
+          };
+     </pre> 
+     <p>8.Second Smallest</p>
+     <p>9.Check whether the triangle is acute or obstuce </p>
+
+    
+</body>
+</html>
